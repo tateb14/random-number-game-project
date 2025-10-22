@@ -7,13 +7,13 @@ Random Number Guessing Game (RNGG) is a guessing game which involves two players
 ### Random Number Guessing Game Flowchart
 ```mermaid
 graph TD;
-  main-->menu();
-  main-->start_game();
-  main-->choose_range();
-  main-->exit()
-  start_game()-->get_players();
-  start_game()-->num_gen();
-  start_game()-->guess_num();
+  main-->menu;
+  main-->start_game;
+  main-->choose_range;
+  main-->exit;
+  start_game-->get_players;
+  start_game-->num_gen;
+  start_game-->guess_num;
 ```
 
 #### Function Diagrams
