@@ -25,6 +25,11 @@ graph TD;
 ***
 | `menu`    |               |     Allen Le   |
 | ------------------ | ------------- | ------------ |
+| `argument:none`    | menu accepts no arguements  |              |
+| `choice:int`    | prompts the user for the choice number based on displayed options.    |              |
+|      | | returns choice for main()             |
+***
+| `start_game()`    |               |     Allen Le   |
+| ------------------ | ------------- | ------------ |
 | `argument:none`    | takes input from the user for the choice  |              |
 |      | prompts the user for the choice number based on displayed options.  | returns choice for main()             |
-***
