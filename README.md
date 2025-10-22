@@ -29,7 +29,16 @@ graph TD;
 | `choice:int`    | prompts the user for the choice number based on displayed options.    |              |
 |      | | returns choice for main()             |
 ***
-| `start_game()`    |               |     Allen Le   |
+| `start_game()`    |               |     Tate Basham   |
 | ------------------ | ------------- | ------------ |
-| `argument:none`    | takes input from the user for the choice  |              |
-|      | prompts the user for the choice number based on displayed options.  | returns choice for main()             |
+| `argument:none`    | accepts no args  |              |
+|      | calls function: get_players()  | see IPO for get_players()             |
+|      | calls function: gen_num()  | see IPO for gen_num()             |
+|      | calls function: guess_num()  | see IPO for guess_num()             |
+***
+| `get_players()`    |               |     Tate Basham   |
+| ------------------ | ------------- | ------------ |
+| `argument:none`    | accepts no args  |              |
+| `p1:str`     | prompts the user for the name of player 1  |   |
+| `p2:str` | prompts the user for the name of player 2 | |
+| | returns p1 and p2 | |
