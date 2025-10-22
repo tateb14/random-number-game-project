@@ -1,16 +1,19 @@
-# Program Name
-Team member 1, Team member 2, Team member 3
+# Random Number Guessing Game
+Tate Basham, Allen Le
 
-## <program_name> Description
-Here is where you describe what the program does
+## Random Number Guessing Game Description
+Random Number Guessing Game (RNGG) is a guessing game which involves two players. The program will define a number defined in the scope of the range (can be customized). The players will take turns guessing the number. If the correct number is guessed, the player who guessed it will be congratulated and prompts to play again, change the range, or exit the game!
 
-### <program_name> Flowchart
+### Random Number Guessing Game Flowchart
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
-  A-->D;
-  A-->E;
+  main-->menu();
+  main-->start_game();
+  main-->choose_range();
+  main-->exit()
+  start_game()-->get_players();
+  start_game()-->num_gen();
+  start_game()-->guess_num();
 ```
 
 #### Function Diagrams
