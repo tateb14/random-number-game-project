@@ -23,9 +23,8 @@ graph TD;
 | `arguments:none`    | main accepts no arguements  |              |
 |      | takes choice from menu() and finds the proper function to call  | outputs the correct function.         |
 ***
-| `function name2`    |               |     author   |
+| `menu`    |               |     Allen Le   |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `argument:none`    | takes input from the user for the choice  |              |
+|      | prompts the user for the choice number based on displayed options.  | returns choice for main()             |
 ***
