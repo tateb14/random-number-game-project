@@ -7,6 +7,9 @@ def menu():
 def start_game():
     pass
 
+def get_choice():
+    pass
+
 def choose_range():
     pass
 
