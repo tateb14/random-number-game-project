@@ -25,11 +25,11 @@ def num_gen():
     # between the specified range
     # returns the number
     import random
-    MIN_NUMBER = 0
+    MIN_NUMBER = 0 #defines the min and max numbers
     MAX_NUMBER = 100
     
-    game_number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    return game_number
+    game_number = random.randint(MIN_NUMBER, MAX_NUMBER) # randomly calls a new number
+    return game_number # returns that number
 
 def guess_num():
     pass
