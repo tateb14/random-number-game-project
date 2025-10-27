@@ -2,12 +2,6 @@ def main():
     pass
 
 def menu():
-    pass
-
-def start_game():
-    pass
-
-def get_choice():
     # get_choice accepts no args
     # which will prompt the user to input a number
     # this will validate the inputted number
@@ -21,11 +15,8 @@ def get_choice():
         choice = int(input("Please input a valid number between 1-3: "))
     
     return choice # Returns choice
-
+    
 def choose_range():
-    pass
-
-def exit_game():
     pass
 
 def get_players():
