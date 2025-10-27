@@ -40,7 +40,16 @@ def get_players():
     return p1, p2
 
 def num_gen():
-    pass
+    # num_gen accepts no args
+    # it will generate a number
+    # between the specified range
+    # returns the number
+    import random
+    MIN_NUMBER = 0 #defines the min and max numbers
+    MAX_NUMBER = 100
+    
+    game_number = random.randint(MIN_NUMBER, MAX_NUMBER) # randomly calls a new number
+    return game_number # returns that number
 
 def guess_num():
     pass
