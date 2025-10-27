@@ -14,6 +14,8 @@ graph TD;
   start_game-->get_players;
   start_game-->num_gen;
   start_game-->guess_num;
+  choose_range-->max_num;
+  choose_range-->min_num;
 ```
 
 #### Function Diagrams
