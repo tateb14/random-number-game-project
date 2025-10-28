@@ -43,7 +43,7 @@ def num_gen(min_number, max_number):
     # returns the number
     import random
     
-    game_number = random.randint(MIN_NUMBER, MAX_NUMBER) # randomly calls a new number
+    game_number = random.randint(min_number, max_number) # randomly calls a new number
     return game_number # returns that number
 
 def guess_num():
