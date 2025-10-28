@@ -17,7 +17,13 @@ def menu():
     return choice # Returns choice
     
 def choose_range():
-    pass
+    # choose range accepts no args
+    # prompts the user for the minimum number
+    # prompts the user for the maximum number
+    
+    min_number = int(input("Please enter a value for the minimum number in the guessing: "))
+    max_number = int(input("Please enter a value for the maximum number in the guessing: "))
+    return min_number, max_number
 
 def get_players():
     # get_players accepts no args
@@ -30,8 +36,8 @@ def get_players():
     
     return p1, p2
 
-def num_gen(MIN_MUMBER, MAX_NUMBER):
-    # num_gen accepts MIN_NUMBER and MAX_NUMBER
+def num_gen(min_number, max_number):
+    # num_gen accepts min_number and max_number
     # it will generate a number
     # between the specified range
     # returns the number
