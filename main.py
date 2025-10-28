@@ -14,12 +14,12 @@ def main():
     #loop
     while loop_primer == 1:
         if choice == 1: #Start New Game
-            player_1, player_2 = get_player()
-            game(game_range_min, game_range_max, player_1, player_2)
+            player_1, player_2 = get_players()
+            guess_num(game_range_min, game_range_max, player_1, player_2)
             choice = menu()
             
         elif choice == 2: #Choose Range
-            game_range_min, game_range_max = num_gen()
+            game_range_min, game_range_max = choose_range()
             choice = menu()
         
         elif choice == 3: #Exit Program
@@ -55,19 +55,19 @@ def get_players():
     # names for player 1 and player 2
     # returns both player names
     
-    p1 = input("Please enter the name of player 1: ")
-    p2 = input("Please enter the name of player 2: ")
+    player_1 = input("Please enter the name of player 1: ")
+    player_2 = input("Please enter the name of player 2: ")
     
-    return p1, p2
+    return player_1, player_2
 
-def num_gen(min_number, max_number):
+def num_gen(game_range_min, game_range_max):
     # num_gen accepts min_number and max_number
     # it will generate a number
     # between the specified range
     # returns the number
     import random
     
-    game_number = random.randint(min_number, max_number) # randomly calls a new number
+    game_number = random.randint(game_range_min, game_range_max) # randomly calls a new number
     return game_number # returns that number
 
 def guess_num(game_range_min, game_range_max, player_1, player_2):
@@ -83,33 +83,35 @@ def guess_num(game_range_min, game_range_max, player_1, player_2):
     player_turn = 1
     
     while guess != number:
-        if player_turn = 1: #player 1 turn
-            guess = input(player_1, ", guess a number between ", game_range_min, " and ", game_range_max, sep='')
+        if player_turn == 1: #player 1 turn
+            guess = int(input(f"{player_1}, guess a number between {game_range_min} and {game_range_max}. "))
             while guess < game_range_min or guess > game_range_max: # validation
-                guess = int(input("Please input a valid number between", game_range_min, " and ", game_range_max, sep=''))
+                guess = int(input(f"Please input a valid number between {game_range_min} and {game_range_max}. "))
             if guess < number: # compares guess to number
                 print("The number is higher")
             elif guess > number:
                 print("The number is lower")
             elif guess == number:
-                print(player_1, "has won, the number was" number)
+                print(player_1,"has won in ", turns, ", the number was ", number, sep='')
             player_turn = 2 #sets it to player 2 turn
             
-        elif player_turn = 2: #player 2 turn
-            guess = input(player_2, ", guess a number between ", game_range_min, " and ", game_range_max, sep='')
+        elif player_turn == 2: #player 2 turn
+            guess = int(input(f"{player_2}, guess a number between {game_range_min} and {game_range_max}. "))
             while guess < game_range_min or guess > game_range_max: # validation
-                guess = int(input("Please input a valid number between", game_range_min, " and ", game_range_max, sep=''))
+                guess = int(input(f"Please input a valid number between {game_range_min} and {game_range_max}. "))
             if guess < number: # compares guess to number
                 print("The number is higher")
             elif guess > number:
                 print("The number is lower")
             elif guess == number:
-                print(player_2, "has won, the number was" number)
+                print(player_2, "has won in ", turns, ", the number was ", number, sep='')
             player_turn = 3 #sets it to 3 to change turn counter
         
-        elif player_turn = 3
+        elif player_turn == 3:
             turns += 1 # adds 1 to turn counter
             player_turn = 1 #sets it to player 1 turn
+            
+main()
         
     
                 
